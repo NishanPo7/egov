@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: none;
+    transition: all 0.2s linear;
+}
+nav {
+    display: flex;
+    position: relative;
+    padding: 0.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+nav img {
+    width: 45px;
+    position: absolute; 
+    top: 10px; 
+    left: 20px; 
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f20202;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width:100%
+}
+
+body{
+    background-image: url('images/bkg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.container form {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col {
+    flex: 1 1 250px;
+}
+
+.container form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputBox {
+    margin: 15px 0;
+}
+
+.container form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border: 1px solid #000;
+}
+
+.container form .row .col .inputBox .payment-method {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container form .row .col .inputBox .payment-method div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container form .row .col .inputBox .payment-method img {
+    position: relative;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    padding: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.container form .row .col .inputBox .payment-method img:hover {
+    border-color: #1a53ff;
+}
+
+.container form .row .col .inputBox .payment-method img.selected {
+    border-color: #1a53ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.container form .row .col .inputBox .payment-method img.selected:hover {
+    border-color: #1a53ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container form .row .col .inputBox .payment-method img::after {
+    content: "\2713";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #1a53ff;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container form .row .col .inputBox .payment-method img.selected::after {
+    opacity: 1;
+}
+
+.container form .row .col .inputBox .payment-method span {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.container form .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .submit-btn {
+    display: inline-block;
+    width: 25%;
+    padding: 12px;
+    font-size: 17px;
+    background: #1a53ff;
+    color: #fff;
+    margin-top: 20px; 
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.container form .submit-btn:hover {
+    background: #4d79ff;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}

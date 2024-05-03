@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JalSewa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="registration.html">REGISTER</a></li>
+                    <li><a href="payment.html">PAYMENT</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>नेपाल को सबसे भरपर्दो <br>जल प्रधान सेवा</h1>
+            <h4>People's trusted supply service with quality assurance. Government verified.</h4>
+            <br>
+            <h3>Register or make payment anytime online</h3>
+            <br>
+            <a href="registration.html" class="hero-btn" style="margin-right: 50px;">Register Now</a>
+            <a href="payment.html" class="hero-btn">Payment</a>
+        </div>
+    </section>
+
+   
+
+<!-------places--------->
+    <section class="places">
+        <h1>Our Headquarter Locations</h1>
+        <p>Popular among our <b>Nepali</b> brethren. Our services expand wide.</p>
+        <div class="row">
+            <div class="places-col">
+                <img src="images/ktm.jpg">
+                <div class="layer">
+                    <h3>Kathmandu</h3>
+                </div>
+            </div>
+            <div class="places-col">
+                <img src="images/pokhara.jpg">
+                <div class="layer">
+                    <h3>Pokhara</h3>
+                </div>
+            </div>
+            <div class="places-col">
+                <img src="images/chitwan.jpg">
+                <div class="layer">
+                    <h3>Chitwan</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!--Services Offered-->
+     <section class="course">
+        <h1>Our Services</h1>
+        <p>Our commitment to excellence ensures that you can trust in the quality of our water, whether it's for drinking, cooking, or everyday use.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Installation</h3>
+                <p>Experience hassle-free installation with our water service provider. Our expert technicians handle every step with precision, from assessing your needs to implementing the latest technology, ensuring seamless integration into your home or business. Trust us to deliver reliable, efficient, and professional installation services, guaranteeing peace of mind and satisfaction for our valued customers.</p>
+            </div>
+            <div class="course-col">
+                <h3>Repair and Maintenance</h3>
+                <p>The repair and maintenance services offered by our company are prompt, thorough, and conducted by skilled professionals. With a commitment to ensuring uninterrupted access to clean water, the team diligently inspects, troubleshoots, and addresses any issues swiftly, safeguarding the integrity and efficiency of the water system.</p>
+            </div>
+            <div class="course-col">
+                <h3>Expert Suggestions</h3>
+                <p>"The expert advice service provided by our water service provider offers personalized guidance and solutions tailored to your specific needs. Our knowledgeable team of professionals is dedicated to assisting you with everything from water conservation tips to troubleshooting and maintenance advice, ensuring optimal functionality and efficiency of your water systems. </p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!----testimonials------>
+<section class="testimonials">
+    <h1>Customer Review</h1>
+    <p>Here are some satisfied customer's reviews which we are proud of.</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/rbk.jpg">
+            <div>
+            <p>As a long-time customer of your water service, I can confidently say that it has been a game-changer for my household. The reliability of your water delivery is unmatched. I never have to worry about interruptions or quality issues.</p>
+            <h3>- Ram Bahadur Karki</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/sita.jpg">
+            <div>
+            <p>Your customer support team is friendly, knowledgeable, and quick to address any questions or concerns I have, providing peace of mind and reassurance. Overall, I couldn't be happier with the level of service and care I receive from your company. </p>
+            <h3>- Sita Lama</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!----Javascript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="bundle.js"></script>
+<footer>
+    <div class="row2">
+        <div class="col2">
+            <img src="images/logo2.png" class="logo2">
+        </div>
+        <div class="col2">
+            <h3>Contact Us <div class="underline"><span> </span></div></h3>
+            <p>+977 015748321</p>
+            <h4 class="email-id">jalsewa001@gmail.com</h4>
+            <h4>Koteshwor-32, Kathmandu</h4>
+        </div>
+        <div class="col2">
+            <h3>Links <div class="underline"><span> </span></div></h3>
+            <ul>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="registration.html">REGISTER</a></li>
+                <li><a href="payment.html">PAYMENT</a></li>
+            </ul>
+        </div>
+        <div class="col2">
+            <h3>Socials <div class="underline"><span> </span></div></h3>
+            <div class="social-icons">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copy"><b>नेपाल सरकार द्वार जनहित मा जरी</b></p>
+</footer>
+
+</body>
+</html>

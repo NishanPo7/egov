@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="registration.html">REGISTER</a></li>
+                <li><a href="payment.html">PAYMENT</a></li>
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Customer Information</h3>
+                    <div class="inputBox">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Registration Number:</span>
+                        <input type="text" placeholder="0123456789">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address:</span>
+                        <input type="text" placeholder="District">
+                    </div>
+                    <div class="inputBox">
+                        <span>Ward No:</span>
+                        <input type="text" placeholder="00">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputBox">
+                        <span>Payment Method:</span>
+                        <div class="payment-method">
+                            <div>
+                                <img src="images/esewa.png" alt="">
+                                <span>E-SEWA</span>
+                            </div>
+                            <div>
+                                <img src="images/khalti.png" alt="">
+                                <span>KHALTI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <span>Phone / Mobile No:</span>
+                        <input type="text" placeholder="No.">
+                    </div>
+                    <div class="inputBox">
+                        <span>Active Months</span>
+                        <input type="number" placeholder="Total Service Months">
+                    </div>
+                </div>
+            </div>
+            <a href="index.html" id="proceedToPayBtn" class="submit-btn">Proceed To Pay</a>
+        </form>
+    </div>
+    <div class="popup-container" id="paymentSuccessPopup">
+        <div class="popup-content">
+            <h2>Payment Successful !!</h2>
+            <a href="index.html">Home Page</a>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>
